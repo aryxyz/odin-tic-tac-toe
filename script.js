@@ -126,7 +126,7 @@ function control(gameboard,player1,player2){
 
 playerO = player("arian","o");
 playerX = player("amin","x");
-
+const rootStyle = getComputedStyle(document.documentElement);
 let controlFlow = {};
 document.querySelector(".btn-start").addEventListener('click',(e)=>{
     const playerXName  = document.querySelector("#player-x-name");
@@ -158,6 +158,7 @@ document.querySelector(".btn-restart").addEventListener('click',()=>{
     });
     document.querySelector(".gameboard-container").style.visibility = "hidden";
     document.querySelector("#winner-name").textContent = "";
+    document.querySelector("#turn-light").style.backgroundColor = rootStyle.getPropertyValue("--x-color");
     gameboard.reset();
 
 
@@ -166,7 +167,7 @@ document.querySelector(".btn-restart").addEventListener('click',()=>{
 
 
 gameboard.display();
-const rootStyle = getComputedStyle(document.documentElement);
+
 
 document.querySelector(".gameboard-container").addEventListener('click',(e)=>{
     const winner = controlFlow.action(e.target.dataset.number);
