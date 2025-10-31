@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="turn-light">
+    
+    </div>
+
+    <div class="main-section">
+        <h1><span style="color: var(--x-color);" >X</span> vs <span style="color: var(--o-color);" >O</span></h1>
+       <div class="menu">
+            <div class="inputs">
+             
+                <p class="x-input">
+                    <label for="player-x-name">Player x's name :</label>
+                    <input type="text" id="player-x-name"  class="player-input" required>
+                </p>
+                
+    
+                <p class="o-input">
+                    <label for="player-x-name">Player o's name :</label>
+                    <input type="text" id="player-o-name" class="player-input" required>
+                </p>
+            
+            </div>
+            <p class="empty-error"></p>
+
+            <div class="control-menu">
+                <button   class="btn-start" >start</button>
+                <button type="button" class="btn-restart">restart</button>
+            </div>
+       </div>
+       <h1 id="winner-name"></h1>
+       <div class="gameboard-container">
+            <div class="grid">
+                <div class="mark mark-x"></div>
+            </div>
+            <div class="grid">
+                <div class="mark mark-y"></div>
+            </div>
+            <div class="grid">
+                <div class="mark"></div>
+            </div>
+            <div class="grid">
+                <div class="mark"></div>
+            </div>
+            <div class="grid">
+                <div class="mark"></div>
+            </div>
+            <div class="grid">
+                <div class="mark"></div>
+            </div>
+            <div class="grid">
+                <div class="mark"></div>
+            </div>
+            <div class="grid">
+                <div class="mark"></div>
+            </div>
+            <div class="grid">
+                <div class="mark"></div>
+            </div>
+       </div>
+
+
+
+    </div>
+
+   
+
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+
+:root{
+    --x-color: 	rgb(59, 184, 219);
+    --o-color : rgb(251, 44, 54);
+    --x-color-hover :#3bb8dbdc; 
+    --o-color-hover :#fb2c36cc; 
+
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.main-section{
+    width: 40%;
+    height: 100vh;
+ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 4rem;
+
+}
+h1 span{
+    font-size: 5rem;
+   
+    
+
+
+}
+
+
+
+.menu{
+   
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.control-menu{
+    display: flex;
+    justify-content: right;
+
+}
+
+
+.control-menu button{
+    width: 50%;
+    height: 40px;
+    font-size: 1.2rem;
+    border: none;
+    text-transform: uppercase; 
+    color: white;
+    font-weight: bold;
+}
+
+.btn-start{
+    background-color: var(--x-color);
+
+}
+.btn-start:hover{
+    background-color: var(--x-color-hover);
+}
+
+.btn-restart{
+    background-color: var(--o-color);
+   
+    transition: width 1s ease-out;
+}
+
+.btn-restart:hover{
+    background-color: var(--o-color-hover);
+}
+
+.x-input{
+    color: var(--x-color);
+    
+}
+
+
+.o-input{
+    color: var(--o-color);
+}
+
+
+.inputs label{
+    font-size: 1.3rem;
+    font-weight: 800;
+    width: 45%;
+}
+
+.inputs input{
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 55%;
+    color: inherit;
+   
+
+
+}
+
+.x-input , .o-input{
+    display: flex;
+
+    
+    
+}
+#player-x-name{
+    border:  solid 1px var(--x-color);
+}
+
+#player-o-name{
+    border:  solid 1px var(--o-color);
+}
+
+.gameboard-container{
+   
+    background-color: white;
+    width: 70%;
+    height: 500px;
+    border:  1px solid gray;
+    
+    
+
+}
+#winner-name{
+    color: #3BB8DB;
+    margin: 10px 0;
+    
+}
+
+.gameboard-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:  repeat(3, 1fr);
+    visibility: hidden;
+
+
+}
+.grid{
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid .mark{
+    color: #3BB8DB;
+    font-size: 8.5em;
+
+}
+
+.mark-x{
+    color: var(--x-color) !important;
+}
+.mark-o{
+    color: var(--o-color) !important;
+}
+
+.menu .empty-error{
+    text-align: center;
+    color: #FB2C36;
+    font-size: 1.2rem;
+}
+
+
+
+#turn-light{
+    width: 3%;
+    height: 50px;
+    background-color: var(--x-color);
+  
+    position: absolute;
+    left: 10px ;
+    top: 10px;
+
+}
